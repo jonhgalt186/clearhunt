@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ClearHunt — анти-галера для hh.ru</title>
+    <meta name="description" content="Расширение ClearHunt убирает из выдачи hh.ru дубли, посредников, низкий рейтинг и давно висящие объявления.">
+    <style>
+        :root {
+            --bg: #f4f6f8;
+            --card: #ffffff;
+            --text: #1a1d21;
+            --muted: #5c6570;
+            --line: #e2e6ea;
+            --accent: #1a73e8;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+            font-size: 17px;
+            line-height: 1.5;
+            color: var(--text);
+            background: var(--bg);
+        }
+
+        main {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 48px 20px 64px;
+        }
+
+        h1 {
+            margin: 0 0 8px;
+            font-size: 32px;
+            line-height: 1.2;
+        }
+
+        .lead {
+            margin: 0 0 28px;
+            font-size: 18px;
+        }
+
+        section {
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 20px 22px;
+            margin: 0 0 16px;
+        }
+
+        h2 {
+            margin: 0 0 10px;
+            font-size: 16px;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+
+        li + li { margin-top: 6px; }
+
+        .note {
+            margin: 12px 0 0;
+            color: var(--muted);
+            font-size: 15px;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 8px;
+        }
+
+        .stub {
+            appearance: none;
+            border: 1px solid var(--line);
+            background: #eef1f4;
+            color: var(--muted);
+            border-radius: 8px;
+            padding: 10px 16px;
+            font: inherit;
+            font-weight: 600;
+            cursor: default;
+        }
+
+        .soon {
+            margin: 16px 0 0;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        footer {
+            margin-top: 8px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>ClearHunt</h1>
+        <p class="lead">Анти-галера для hh.ru. Убирает из выдачи дубли, посредников, низкий рейтинг и давно висящие объявления, чтобы меньше листать.</p>
+
+        <section>
+            <h2>Что делает</h2>
+            <ul>
+                <li>Скрывает повторы одной и той же вакансии и похожие объявления той же компании.</li>
+                <li>Помечает или скрывает кадровые агентства и компании с низким рейтингом на hh.</li>
+                <li>Чёрный список компаний: скрыть с карточки, сохранить список у себя.</li>
+                <li>Помнит, какие вакансии вы уже открывали.</li>
+            </ul>
+            <p class="note">«Давно висит» — это прикидка по номеру вакансии, не дата в календаре.</p>
+        </section>
+
+        <section>
+            <h2>Где работает</h2>
+            <p>hh.ru и зеркала: hh.kz, hh.uz, rabota.by, headhunter.kg, headhunter.ge.</p>
+            <p class="note">Списки и настройки остаются на вашем компьютере. Расширение их никуда не отправляет.</p>
+        </section>
+
+        <section>
+            <h2>Установить</h2>
+            <div class="actions">
+                <button type="button" class="stub" disabled>Скоро в Chrome</button>
+                <button type="button" class="stub" disabled>Скоро в Firefox</button>
+                <button type="button" class="stub" disabled>Скоро в Opera</button>
+            </div>
+            <p class="note">Opera и другие браузеры на том же движке, что Chrome, тоже подойдут, когда появится установка.</p>
+            <p class="soon">Ссылки на магазины появятся здесь, когда страница будет опубликована и карточки расширения будут готовы.</p>
+        </section>
+
+        <footer>ClearHunt — бесплатное расширение для поиска работы на hh.</footer>
+    </main>
+</body>
+</html>
