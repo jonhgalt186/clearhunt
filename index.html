@@ -88,6 +88,22 @@
             cursor: default;
         }
 
+        a.store {
+            display: inline-block;
+            border: 1px solid var(--accent);
+            background: var(--accent);
+            color: #fff;
+            border-radius: 8px;
+            padding: 10px 16px;
+            font: inherit;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        a.store:hover {
+            filter: brightness(0.95);
+        }
+
         .soon {
             margin: 16px 0 0;
             color: var(--muted);
@@ -127,11 +143,11 @@
             <h2>Установить</h2>
             <div class="actions">
                 <button type="button" class="stub" disabled>Скоро в Chrome</button>
-                <button type="button" class="stub" disabled>Скоро в Firefox</button>
+                <a class="store" href="https://addons.mozilla.org/ru/firefox/addon/clearhunt/" rel="noopener noreferrer">Установить в Firefox</a>
                 <button type="button" class="stub" disabled>Скоро в Opera</button>
             </div>
             <p class="note">Opera и другие браузеры на том же движке, что Chrome, тоже подойдут, когда появится установка.</p>
-            <p class="soon">Ссылки на магазины появятся здесь, когда страница будет опубликована и карточки расширения будут готовы.</p>
+            <p class="soon">Chrome и Opera — скоро. Firefox уже можно ставить по кнопке выше.</p>
         </section>
 
         <footer>ClearHunt — бесплатное расширение для поиска работы на hh.</footer>
