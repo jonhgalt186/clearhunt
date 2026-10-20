@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Политика конфиденциальности — ClearHunt</title>
+    <meta name="description" content="Политика конфиденциальности расширения ClearHunt для hh.ru.">
+    <style>
+        :root {
+            --bg: #f4f6f8;
+            --card: #ffffff;
+            --text: #1a1d21;
+            --muted: #5c6570;
+            --line: #e2e6ea;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+            font-size: 16px;
+            line-height: 1.55;
+            color: var(--text);
+            background: var(--bg);
+        }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 20px 64px;
+        }
+        h1 { margin: 0 0 8px; font-size: 28px; line-height: 1.2; }
+        h2 { margin: 28px 0 8px; font-size: 18px; }
+        p, li { color: var(--text); }
+        .meta { color: var(--muted); margin: 0 0 24px; }
+        section {
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 20px 22px;
+            margin: 0 0 16px;
+        }
+        ul { margin: 0; padding-left: 18px; }
+        li + li { margin-top: 6px; }
+        a { color: #1a73e8; }
+        footer { margin-top: 16px; color: var(--muted); font-size: 14px; }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Политика конфиденциальности</h1>
+        <p class="meta">ClearHunt (раньше FilterJobHH). Дата: 20.10.2026</p>
+
+        <section>
+            <h2>1. Общие положения</h2>
+            <p>ClearHunt — браузерное расширение для локальной фильтрации вакансий на сайтах HeadHunter: hh.ru, hh.kz, hh.uz, rabota.by, headhunter.kg, headhunter.ge.</p>
+            <p>Расширение не собирает, не передаёт и не продаёт персональные данные пользователя.</p>
+        </section>
+
+        <section>
+            <h2>2. Какие данные обрабатывает расширение</h2>
+            <p>Только технические данные, нужные для фильтров, и только на вашем устройстве:</p>
+            <ul>
+                <li>настройки фильтров;</li>
+                <li>чёрный список компаний;</li>
+                <li>список просмотренных вакансий с отметкой времени.</li>
+            </ul>
+            <p>На страницах hh расширение читает содержимое карточек вакансий (название, работодатель, рейтинг и т.п.), чтобы скрыть или пометить их. Это происходит в браузере и не отправляется разработчику.</p>
+        </section>
+
+        <section>
+            <h2>3. Где хранятся данные</h2>
+            <p>Все пользовательские настройки и списки хранятся локально через storage браузера. Они не уходят на сервер разработчика и не передаются третьим лицам.</p>
+        </section>
+
+        <section>
+            <h2>4. Что не собирается</h2>
+            <ul>
+                <li>ФИО, email, телефоны, пароли;</li>
+                <li>платёжные данные;</li>
+                <li>аналитика, рекламные трекеры, телеметрия;</li>
+                <li>история посещений сайтов вне работы фильтров на поддерживаемых страницах HeadHunter.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Внешние запросы</h2>
+            <p>Расширение может загрузить JSON-файл с CSS-селекторами с GitHub (raw.githubusercontent.com), чтобы фильтр не ломался при смене вёрстки hh. Это данные конфигурации, не удалённый исполняемый код. Списки пользователя и настройки в этом запросе не передаются.</p>
+            <p>Ссылки на сайт расширения и страницу доната открываются только если пользователь сам на них нажимает.</p>
+        </section>
+
+        <section>
+            <h2>6. Контакты</h2>
+            <p>Вопросы по конфиденциальности: через карточку ClearHunt в магазине расширений (Chrome Web Store / Firefox Add-ons) или сайт <a href="https://jonhgalt186.github.io/clearhunt/">jonhgalt186.github.io/clearhunt</a>.</p>
+        </section>
+
+        <footer>
+            <a href="./">← На главную ClearHunt</a>
+        </footer>
+    </main>
+</body>
+</html>
